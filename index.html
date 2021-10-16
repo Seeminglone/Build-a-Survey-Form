@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Build a Survey Form</title>
+</head>
+<body>
+<header>
+        <h2 class = "logo">Yurii Kravtsov Survey Form</h2>
+</header>
+<main>
+    <div class="container">
+        <div>  
+            <h2 class = "quastion">Name</h2>
+            <input placeholder="Enter your name">
+        </div>
+        <div>   
+            <h2 class = "quastion">Email</h2>
+            <input placeholder="Enter your Email">
+        </div>
+        <div>   
+            <h2 class = "quastion">Age(optional)</h2>
+            <input type="number" placeholder="Age">
+        </div>
+        <div>   
+            <h2 class = "quastion">Which option best describes your current role?</h2>
+            <select class="select-container" required>
+                <option disabled selected value>Select current role</option>
+                <option value="student">Student</option>
+                <option value="job">Full time job</option>
+                <option value="learn">Full time Learner</option>
+                <option value="not-to-say">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div>
+            <h2 class = "quastion">Would you recommend freeCodeCamp to a friend?</h2>
+            <input type="radio" checked>"Definitely"
+            <div>
+                <input type="radio" id="dewey" name="drone" value="dewey">
+                <label for="dewey">Dewey</label>
+              </div>
+
+
+        </div>
+    </div>
+    </main>
+</body>
+</html>
