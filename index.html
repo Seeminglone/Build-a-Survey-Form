@@ -12,35 +12,35 @@
         <h2 class = "logo">Yurii Kravtsov Survey Form</h2>
 </header>
 <main>
-    <div class="container">
+    <form class="container">
         <div class="input">  
             <h2 class = "quastion">Name</h2>
-            <input placeholder="Enter your name">
+            <input placeholder="Enter your name" required>
         </div>
         <div class="input">   
             <h2 class = "quastion">Email</h2>
-            <input placeholder="Enter your Email">
+            <input placeholder="Enter your Email" required>
         </div>
         <div class="input">   
             <h2 class = "quastion">Age(optional)</h2>
-            <input type="number" placeholder="Age">
+            <input type="number" placeholder="Age" required>
         </div>
         <div>   
             <h2 class = "quastion">Which option best describes your current role?</h2>
-            <select class="select-container" required>
+            <select class="select-container">
                 <option disabled selected value>Select current role</option>
-                <option value="student">Student</option>
-                <option value="job">Full time job</option>
-                <option value="learn">Full time Learner</option>
-                <option value="not-to-say">Prefer not to say</option>
-                <option value="other">Other</option>
+                <option value="student" required>Student</option>
+                <option value="job" required>Full time job</option>
+                <option value="learn" required>Full time Learner</option>
+                <option value="not-to-say" required>Prefer not to say</option>
+                <option value="other" required>Other</option>
             </select>
         </div>
         <div class="type-radio">
             <h2 class = "quastion">Would you recommend freeCodeCamp to a friend?</h2>
-            <label><input type="radio" name="recommend"><h1>Definitely</h1></label>
-            <label><input type="radio" name="recommend"><h1>Maybe</h1></label>
-            <label><input type="radio" name="recommend"><h1>Not sure</h1></label>
+            <label><input type="radio" name="recommend" required><h1>Definitely</h1></label>
+            <label><input type="radio" name="recommend" required><h1>Maybe</h1></label>
+            <label><input type="radio" name="recommend" required><h1>Not sure</h1></label>
         </div>
         <div>   
             <h2 class = "quastion">What is your favorite feature of freeCodeCamp?</h2>
@@ -70,10 +70,9 @@
             <textarea placeholder="Enter your comment here..."></textarea>
             <button type="submit" class="submit-button" aria-required="true"> Submit </button> 
         </div>
-    </div>
+</form>
     </main>
-    <footer>
-        <h2>Website design by Yurii Kravtsov</h2>
-    </footer>
+    
+
 </body>
 </html>

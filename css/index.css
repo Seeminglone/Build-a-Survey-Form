@@ -17,6 +17,7 @@ header .logo{
     text-align: center;
     font-family: 'Quicksand', sans-serif;
 }
+
 main{
     color: white;
     text-align: left;
@@ -33,7 +34,7 @@ main .container{
     opacity: .8;
     padding: 0px 50px 50px 50px;
     border-radius: 5px;
-
+    margin: 0 0 20px 0;
 }
 
 main .quastion{
@@ -98,7 +99,13 @@ button[type=submit]{
     display: block;
 
 }
-footer h2{
-    color:white;
-    font-size: 15px;
+
+@media all and (max-width: 600px){
+    main .container{
+        width: 60%;
+    }
+    main .type-radio h1, main .type-checkbox h1{
+        font-size: 20px;
+        margin:0px 0px 0px 4px;
+    }
 }
